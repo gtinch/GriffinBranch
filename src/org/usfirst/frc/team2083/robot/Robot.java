@@ -43,8 +43,8 @@ public class Robot extends IterativeRobot {
     public void autonomousPeriodic() {
     	if(autoLoopCounter < 1000) //Check if we've completed 100 loops (approximately 2 seconds)
 		{
-			//myRobot.drive(-0.5, 0.0); 	// drive forwards half speed
-    		switch (autoLoopCounter)
+			myjRobot.set(-0.5); 	// drive forwards half speed
+    	/*	switch (autoLoopCounter)
     		{
     		
     		case 1: myjRobot.set(-.4);
@@ -64,7 +64,11 @@ public class Robot extends IterativeRobot {
     		
     		default:
     			break;
-    		}
+    		}*/
+		}
+		else
+		{
+			myjRobot.stopMotor();
 		}
     }
     /**
