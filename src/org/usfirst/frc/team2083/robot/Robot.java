@@ -67,6 +67,10 @@ public class Robot extends IterativeRobot {
     public void teleopPeriodic() {
         myRobot.arcadeDrive(0,0);
         if(stick.getRawButton(1)){myRobot.drive(0.2,0);}
+        if(stick.getRawButton(2)){myRobot.drive(0.3, 0);}
+        if(stick.getRawButton(3)){myRobot.drive(0.4, 0);}
+        if(stick.getRawButton(4)){myRobot.drive(0.5, 0);}
+        if(stick.getRawButton(0)){myRobot.drive(0,0);}
     }
     
     /**
